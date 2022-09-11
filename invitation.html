@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Invitation Page</title>
+<meta charset="UTF-8">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/volunteers.js"></script>
+</head>
+<body>
+<header>
+<div class="top">
+<a class="logo" href="index.html">CapellaVolunteers<span
+class="dotcom">.org</span></a>
+</div>
+<nav>
+<ul class="topnav">
+<li><a href="index.html">Home</a>
+</li>
+<li><a href="invitation.html" class="active">Invitation</a>
+</li>
+<li><a href="gallery.html">Gallery</a>
+</li>
+<li><a href="registration.html">Registration</a>
+</li>
+</ul>
+</nav>
+</header>
+<section id="pageForm">
+<label for="recipientNum">Number of Recipients:</label>
+<input id="recipientNum" name="recipientNum" type="number" min="1" onkeypress="return frmDisp(event)" />
+<div>Enter number of recipients. Press Enter.</div>
+<form onsubmit="return array()">
+<div id='volunteerForm'></div>
+<input type="submit" id="submit" value="Submit" style="display:none">
+</form>
+</section>
+<div id="volunteerInvitation"></div>
+</body>
+</html>
