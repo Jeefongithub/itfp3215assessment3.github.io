@@ -31,7 +31,7 @@ function preloadImages(imageArray, index) {
 }
 
 function enlarge(img) {
-    img.style.height = "800px";
+    img.style.height = "500px";
     img.style.width = "auto";
     img.parentElement.parentElement.style.zIndex= "5";
     img.style.position = "fixed"
